@@ -214,17 +214,17 @@ footer{
 .atrakcje{
     padding: 80px;
     background-color: #f5f5f5;
-    text-align: center;
+    
 }
 
 .atrakcje h2{
     font-size: 50px;
     margin-bottom: 50px;
+    
 }
 
 .atrakcje-content{
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
@@ -235,6 +235,7 @@ footer{
     overflow: hidden;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
+    text-align: center;
 }
 
 .atrakcje-karta:hover{
