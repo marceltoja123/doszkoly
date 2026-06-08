@@ -1,0 +1,813 @@
+:root{
+    --granat: #0f172a;
+    --zloty: #d4af37;
+    --bialy: #ffffff;
+    --szary: #f5f5f5;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bialy);
+}
+
+header{
+    background-color: #081229;
+    text-align: center;
+    padding: 20px 0px;
+}
+.logo_d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_d img{
+    width: 400px;
+    height: auto;
+}
+
+nav{
+    background-color: var(--granat);
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: var(--zloty);
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#hero{
+    height: 400px;
+    background-image: url("hero.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content{
+    width: 700px;
+    margin-left: 130px;
+    color: white;
+    text-align: left;
+}
+
+.hero-content h1{
+    font-size: 72px;
+    line-height: 85px;
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+}
+
+.hero-content p{
+    width: 650px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+    text-shadow: 0px 3px 10px rgba(0,0,0,0.7);
+}
+
+.hero-content a{
+    display: inline-block;
+    padding: 18px 45px;
+    background-color: #d4af37;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-content a:hover{
+    background-color: #b8942e;
+}
+section{
+    padding: 80px;
+}
+
+section h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.dlaczego-my{
+    background-color: var(--szary);
+}
+
+.karty{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.karta{
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.pokoje-karta:hover{
+    transform: translateY(-10px);
+}
+.pokoje-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pokoje-karta{
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.pokoje-karta img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.pokoje-karta h3{
+    padding: 15px;
+}
+
+.pokoje-karta p{
+    padding: 0 15px;
+}
+
+.pokoje-karta a{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: var(--granat);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.atrakcje-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.kontakt{
+    background-color: var(--granat);
+    color: white;
+    text-align: center;
+}
+
+.kontakt a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: var(--zloty);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+footer{
+    background-color: #0b1120;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.ikona{
+    display: block;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.atrakcje{
+    padding: 80px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.atrakcje h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.atrakcje-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.atrakcje-karta{
+    width: 380px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.atrakcje-karta:hover{
+    transform: translateY(-10px);
+}
+
+.atrakcje-karta img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.atrakcje-karta h3{
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+.atrakcje-karta p{
+    padding: 0px 25px 30px 25px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.galeria-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.galeria{
+    padding: 80px;
+    text-align: center;
+    background-color: white;
+}
+
+.galeria h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.galeria-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.galeria-content img{
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.galeria-content img:hover{
+    transform: scale(1.05);
+}
+
+.galeria a{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #d4af37;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.galeria a:hover{
+    background-color: #b8942e;
+}
+
+.galeria-content img{
+    filter: brightness(0.95);
+}
+
+.galeria-content img:hover{
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+.kontakt-content{
+    display: flex;
+}
+.mapa{
+    justify-content: right;
+    padding: 20px;
+}
+.kontakt-dane{
+    
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Marcel{
+    color: #b8942e;
+    transition: all 0.3s ease;
+}
+.Marcel:hover{
+    transform: scale(1.1);
+    color: #d4af37;
+}
+.Marcel,a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+a,
+.hamburger{
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+@media screen and (max-width: 900px){
+
+    .logo_d img{
+        width: 240px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li{
+        padding: 10px;
+    }
+
+    #hero{
+        height: 600px;
+        background-position: center;
+    }
+
+    .hero-content{
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .hero-content h1{
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    .hero-content p{
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .karty,
+    .pokoje-content,
+    .atrakcje-content,
+    .kontakt-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .karta,
+    .pokoje-karta,
+    .atrakcje-karta{
+        width: 90%;
+        max-width: 420px;
+    }
+
+    .pokoje-karta img,
+    .atrakcje-karta img{
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .kontakt-dane{
+        width: 90%;
+        text-align: center;
+    }
+
+    .mapa{
+        width: 90%;
+    }
+
+    .mapa iframe{
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    header{
+        padding: 15px 0;
+    }
+
+    .logo_d img{
+        width: 200px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    #hero{
+        height: 520px;
+        background-position: center;
+    }
+
+    .hero-content{
+        width: 270px;
+        margin-left: 25px;
+    }
+
+    .hero-content h1{
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p{
+        width: 270px;
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+    .hero-content a{
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    section{
+        padding: 50px 20px;
+    }
+
+    #dlaczego-my h2,
+    #pokoje h2,
+    #atrakcje h2,
+    #kontakt h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .karta,
+    .pokoje-karta,
+    .atrakcje-karta{
+        width: 100%;
+    }
+
+    .karta p,
+    .pokoje-karta p,
+    .atrakcje-karta p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .pokoje-karta img,
+    .atrakcje-karta img{
+        height: 220px;
+    }
+
+    .kontakt-dane p{
+        font-size: 16px;
+    }
+
+    .mapa iframe{
+        height: 300px;
+    }
+
+    footer{
+        padding: 25px 15px;
+        font-size: 14px;
+    }
+}
+#menu-toggle{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+@media screen and (max-width: 600px){
+
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #16213e;
+    }
+
+    .hamburger{
+        display: block;
+        color: white;
+        font-size: 32px;
+        padding: 15px 25px;
+        cursor: pointer;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li{
+        list-style: none;
+        padding: 12px 0;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    #menu-toggle:checked ~ ul{
+        display: flex;
+    }
+}
+.hero-cennik{
+    height: 350px;
+    background-image: url("hero.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-cennik h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero-cennik p{
+    font-size: 22px;
+}
+
+.cennik{
+    padding: 80px;
+    text-align: center;
+}
+
+.cennik h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.cennik-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cennik-karta{
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.cennik-karta h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cena{
+    font-size: 36px;
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.cennik-karta ul{
+    list-style: none;
+    padding: 0;
+}
+
+.cennik-karta li{
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.premium{
+    border: 3px solid #d4af37;
+}
+
+.informacje{
+    padding: 80px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.informacje h2{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.informacje p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 768px){
+
+    .cennik-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cennik-karta{
+        width: 90%;
+    }
+
+    .hero-cennik h1{
+        font-size: 45px;
+    }
+
+    .hero-cennik p{
+        font-size: 18px;
+    }
+}
+.cennik-karta:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.mapa {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 16px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .mapa {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .mapa iframe {
+        height: 350px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    .mapa iframe {
+        height: 280px;
+        border-radius: 10px;
+    }
+}
+.galeria-hero {
+    padding: 90px 20px 50px;
+    text-align: center;
+    background: #10233f;
+    color: white;
+}
+
+.galeria-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.galeria-hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.galeria {
+    padding: 60px 20px;
+    background: #f7f5f0;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #10233f;
+}
+
+.galeria-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.zdjecie {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.zdjecie:hover {
+    transform: translateY(-8px);
+}
+
+.zdjecie img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.zdjecie h3 {
+    padding: 18px;
+    font-size: 20px;
+    color: #10233f;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria-hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-hero {
+        padding: 70px 15px 40px;
+    }
+
+    .galeria-hero h1 {
+        font-size: 34px;
+    }
+
+    .galeria-hero p {
+        font-size: 16px;
+    }
+
+    .zdjecie img {
+        height: 220px;
+    }
+}
